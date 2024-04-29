@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+* body {
+  background-color: rgb(3, 3, 12);
+  background-color: #100e17;
+  font-family: "Open Sans", sans-serif;
+}
+* body header h1 {
+  text-align: center;
+  color: white;
+  padding: 50px 0px 100px;
+}
+* body header nav {
+  position: fixed;
+  left: 5%;
+  top: 28%;
+  z-index: 1;
+}
+* body header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+* body header nav ul li {
+  padding: 20px 10px;
+  transition: 1s linear;
+}
+* body header nav ul li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  opacity: 0.5;
+}
+* body header nav ul li a:hover {
+  opacity: 1;
+  transform: scale(1.5);
+}
+* body header nav ul li:hover {
+  transform: scale(1);
+}
+* body main {
+  position: relative;
+}
+* body main div {
+  position: relative;
+  height: 300px;
+  width: 900px;
+  left: 27%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px 0px 200px;
+  scroll-margin-top: 175px;
+}
+* body main div .card {
+  display: flex;
+  height: 280px;
+  width: 300px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: 1rem 0rem 1rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+* body main div .card p {
+  color: white;
+  transform: scale(0);
+  transition: 0.6s ease-in-out;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+* body main div .card p img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+* body main div .card h2 {
+  padding-bottom: 10px;
+  color: white;
+  transform: scale(0);
+  transition: 0.6s ease-in-out;
+}
+* body main div .card svg, * body main div .card img.visibility {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: 0.6s ease-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+* body main div .card:not(:first-child) {
+  margin-left: -50px;
+}
+* body main div .card:hover {
+  transform: translateY(-20px) scale(1.4);
+  transition: 0.6s ease-out;
+  z-index: 1;
+}
+* body main div .card:hover p, * body main div .card:hover h2 {
+  transform: scale(1);
+}
+* body main div .card:hover svg.visibility, * body main div .card:hover img.visibility {
+  transform: scale(0);
+  transition: 0.8s ease-out;
+}
+* body main div .card:hover ~ .card {
+  position: relative;
+  left: -80px;
+  transition: 0.4s ease-out;
+}
+* body footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 30px 0;
+}
+* body footer ul li {
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
